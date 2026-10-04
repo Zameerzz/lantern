@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lantern - Study in Germany</title>
+  <meta name="description" content="Lantern helps you apply for a Bachelor, Master, or Ausbildung in Germany. One-time fee: 16000 rupees.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/lantern.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#top">
+      <img src="images/lantern.svg" alt="">
+      <span>LANTERN</span>
+    </a>
+    <nav>
+      <a href="#paths">Paths</a>
+      <a href="#steps">Steps</a>
+      <a href="#pay">Pay</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Study in Germany</p>
+      <h1>A light for your Bachelor, Master, or Ausbildung.</h1>
+      <p class="lead">Lantern is a student in Germany. I show you the real steps and check your documents. I cannot promise a university place or a visa.</p>
+      <p class="fee">One-time fee: <strong>16000 rupees</strong></p>
+      <p class="actions">
+        <a class="button" href="#pay">Pay 16000 rupees</a>
+        <a class="button ghost" href="https://wa.me/4915567550791" target="_blank" rel="noopener">WhatsApp</a>
+      </p>
+    </section>
+
+    <section id="paths">
+      <h2>Choose one path</h2>
+      <div class="cards">
+        <article>
+          <h3>Bachelor</h3>
+          <p>A first university degree, usually after school. We look at your marks, the language of the programme, and whether a foundation year is needed.</p>
+        </article>
+        <article>
+          <h3>Master</h3>
+          <p>A second degree after a Bachelor. We check that your subject and marks match the Master you want.</p>
+        </article>
+        <article>
+          <h3>Ausbildung</h3>
+          <p>Paid vocational training with a company. Most places expect German. This is not a university application.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="steps">
+      <h2>How a university application proceeds</h2>
+      <ol class="steps">
+        <li><strong>You write.</strong> Send your qualification, marks, language level, subject, and intake.</li>
+        <li><strong>We choose the path.</strong> Bachelor or Master. Ausbildung follows a company application instead.</li>
+        <li><strong>We check the profile.</strong> If the path is not realistic, I say so before the plan starts.</li>
+        <li><strong>You pay once.</strong> 16000 rupees, then I write the plan.</li>
+        <li><strong>You receive a shortlist.</strong> Five to eight programmes, each with its real deadline.</li>
+        <li><strong>You get a document list.</strong> Passport, transcripts, language proof, CV, and motivation letter. APS only if your country needs it.</li>
+        <li><strong>You write. I review.</strong> The CV and motivation letter stay in your words.</li>
+        <li><strong>You submit.</strong> On uni-assist or the university portal, in your own name. I do not keep your password.</li>
+        <li><strong>We check the deadline.</strong> Anything still missing is named before the date closes.</li>
+        <li><strong>The university decides.</strong> The visa checklist opens only after a real admission letter.</li>
+      </ol>
+    </section>
+
+    <section id="pay" class="pay">
+      <h2>Payment</h2>
+      <p>The guidance fee is <strong>16000 rupees</strong>, paid once, for one path. Scan the QR code in your payment app. University fees, the blocked account, the visa fee, and translations are not included.</p>
+      <figure class="qr-card">
+        <img id="qr" src="images/payment-qr.png" alt="Payment QR code for 16000 rupees">
+        <figcaption id="qr-note">Place your QR code file at <code>images/payment-qr.png</code> and this box will show it.</figcaption>
+      </figure>
+      <p class="after">After you pay, send a screenshot on WhatsApp with your name and the path: Bachelor, Master, or Ausbildung.</p>
+      <a class="button" href="https://wa.me/4915567550791?text=Hello%20Lantern.%20I%20have%20paid%2016000%20rupees." target="_blank" rel="noopener">Send payment proof on WhatsApp</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>WhatsApp <a href="https://wa.me/4915567550791">+49 155 6755 0791</a></p>
+      <p>Email <a href="mailto:zameer.ou@gmail.com">zameer.ou@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lantern. One-time fee 16000 rupees. Not a university and not the embassy.</p>
+  </footer>
+
+  <script>
+    var qr = document.getElementById("qr");
+    var note = document.getElementById("qr-note");
+    qr.addEventListener("error", function () {
+      qr.hidden = true;
+      note.hidden = false;
+    });
+    qr.addEventListener("load", function () {
+      note.hidden = true;
+    });
+  </script>
+</body>
+</html>
